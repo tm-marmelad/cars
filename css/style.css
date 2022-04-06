@@ -148,7 +148,7 @@ p {
 
 /*Intro start*/
 .intro {
-    background: no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
@@ -287,11 +287,49 @@ p {
 
 .services__item {}
 
-.services__content {}
+.services__content {
+    height: 500px;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
 
-.services__titel {}
+.services__content::after {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+}
 
-.services__text {}
+.services__img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #D82512;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.services__title {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.23en;
+}
+
+.services__text {
+    opacity: 0;
+}
 
 
 
